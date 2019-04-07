@@ -1,0 +1,306 @@
+/* sm - Small devices (landscape phones, 576px and up) start */
+@media (min-width: 576px)
+{
+
+section.four-steps .card
+{
+    height: 155px;
+}  
+
+section#faq .img-pepe-faq
+{
+    float: left;
+    width: 185px;
+    height: 20px;
+}
+
+section#faq .img-pepe-faq div
+{
+    width: 150px;
+    height: 190px;
+    margin-left: 18px;
+    background-image: url(../img/pepe-alt-02.jpg);
+    background-size: 100%;
+    position: absolute;
+}
+
+.contact-message
+{
+    height: 150px;
+}
+
+.loan .progress-ticket .progress-outer
+{
+    margin-top: 35px !important;
+}
+
+}
+/* sm - Small devices end */
+
+/* md - Medium devices (tablets, 768px and up) start */
+@media (min-width: 768px)
+{
+
+.loan .pepe-sm
+{
+    display: block;
+}
+
+#home .hero-text .pepe-sm
+{
+    width: 205px;
+    float: left;
+    margin-bottom: 0px;
+}
+
+section.why .card
+{
+    height: 256px;
+    margin-bottom: 40px;
+}
+
+section.four-steps .card
+{
+    height: 195px;
+}
+
+.loan h1
+{
+    margin-top: 15px;
+}
+
+}
+/* md - Medium devices end */
+
+/* lg - Large devices (desktops, 992px and up) start */
+@media (min-width: 992px)
+{
+
+body
+{
+    margin-top: 76px;
+}
+
+body#home
+{
+    background-image: url(../img/home-back.png);
+    background-position-y: -50px;
+    background-repeat: repeat-x;
+}
+
+nav a.navbar-brand
+{
+    width: 273px;
+    height: 49px;
+    margin-right: 129px;
+}
+
+/* We need to remove this at the moment that register and login are active */
+.navbar-nav
+{
+    margin-left:300px;
+}
+
+a.nav-link
+{
+    margin-left: 37px;
+    margin-bottom: 0px;
+}
+
+.navbar-collapse
+{
+    margin-top: 0px;
+}
+
+#home .hero-text .pepe-sm
+{
+    display: none;
+}
+
+.pepe-lg
+{
+    display: block;
+    height: 690px;
+}
+
+.pepe-lg .pepe-img
+{
+    position: relative;
+}
+
+.pepe-lg .pepe-img div
+{
+    position: absolute;
+    background-image:url(../img/pepe-lg.png);
+    width: 448px;
+    height: 610px;
+    background-size:cover;
+}
+
+/* The following horrendous solution fixes the navbar over titles when navigating with anchors.
+It's a semantically correct, CSS-only solution. Source: https://css-tricks.com/hash-tag-links-padding/
+It needs to be added in every breakpoint that changes navbar height. */
+section#faq:before,
+section#contact:before
+{ 
+    display: block; 
+    content: " "; 
+    margin-top: -65px; 
+    height: 65px; 
+    visibility: hidden; 
+    pointer-events: none;
+}
+/* End of horrendous solution */
+
+section.why .card
+{
+    height: 226px;
+}
+
+section.four-steps .card
+{
+    height: 250px;
+}
+
+section#faq .img-pepe-faq
+{
+    float: none;
+    width: 290px;
+    height: 243px;
+}
+
+section#faq .img-pepe-faq div
+{
+    width: 200px;
+    height: 245px;
+    margin-left: 45px;
+}
+
+.contact-message
+{
+    height: 250px;
+}
+
+.loan h1
+{
+    margin-top: 35px;
+}
+
+.container-loan
+{
+    padding: 12px;
+    background-color: #fff;
+    border: 3px solid #cdcdcd;
+    border-radius: 20px;
+}
+
+.loan .progress-ticket .progress-outer
+{
+    margin-top: 12px !important;
+}
+
+}
+/* lg - Large devices end */
+
+/* xl - Extra large devices (large desktops, 1200px and up) start */
+@media (max-width: 1199px)
+{
+
+.visible-xl
+{
+    display:none;
+}
+
+}
+
+@media (min-width: 1200px)
+{
+
+body#home
+{
+    background-position-y: 0px;
+}
+
+body
+{
+    margin-top: 105px;
+} 
+
+.navbar
+{
+    padding: 1rem;
+}
+
+/* We need to remove this at the moment that register and login are active */
+.navbar-nav
+{
+    margin-left:350px;
+}
+
+nav a.navbar-brand
+{
+    margin-top: 5px;
+    margin-right: 205px;
+}
+
+a.nav-link
+{
+    margin-left: 51px;
+}
+
+/* The following horrendous solution fixes the navbar over titles when navigating with anchors.
+It's a semantically correct, CSS-only solution. Source: https://css-tricks.com/hash-tag-links-padding/
+It needs to be added in every breakpoint that changes navbar height. */
+section#faq:before,
+section#contact:before
+{ 
+    display: block; 
+    content: " "; 
+    margin-top: -86px; 
+    height: 86px; 
+    visibility: hidden; 
+    pointer-events: none;
+}
+/* End of horrendous solution */
+
+.pepe-lg
+{
+    height: 690px;
+}
+
+.pepe-lg .pepe-img div
+{
+    width: 502px;
+    height: 690px;
+}
+
+section.why .card
+{
+    height: 256px;
+}
+
+section.four-steps .card
+{
+    height: 230px;
+}
+
+section#faq .img-pepe-faq
+{
+    width: 350px;
+    height: 285px;
+}
+
+section#faq .img-pepe-faq div
+{
+    width: 243px;
+    height: 285px;
+    margin-left: 54px;
+}
+
+.loan h1
+{
+    margin-top: 45px;
+}
+
+}
+/* xl - Extra large devices end */

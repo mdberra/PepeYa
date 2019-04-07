@@ -1,0 +1,99 @@
+/* sm - Small devices (landscape phones, 576px and up) start */
+@media (min-width: 576px)
+{
+
+.loan .nav-pills
+{
+    font-size:9px;
+}
+
+}
+/* sm - Small devices end */
+
+/* md - Medium devices (tablets, 768px and up) start */
+@media (min-width: 768px)
+{
+
+h1 span.lowlight
+{
+    display:block;
+}
+
+.cta h2 span
+{
+    display: block;
+}
+    
+}
+/* md - Medium devices end */
+
+/* lg - Large devices (desktops, 992px and up) start */
+@media (min-width: 992px)
+{
+
+h1
+{
+    font-size: 52px;
+    line-height: 52px;
+}
+
+h1 span
+{
+    display:block;
+}
+
+span.step-number
+{
+    font-size: 96px;
+}
+
+.btn-lg
+{
+    font-size: 30px;
+}
+
+.hero-text
+{
+    text-align: left;
+}
+
+section.why h3
+{
+    font-size: 22px;
+}
+
+.loan .nav-pills
+{
+    font-size:13px;
+}
+
+}
+/* lg - Large devices end */
+
+/* xl - Extra large devices (large desktops, 1200px and up) start */
+@media (min-width: 1200px)
+{
+
+h1
+{
+    font-size: 63px;
+    line-height: 63px;
+}
+
+.navbar-nav a
+{
+    font-size: 20px;
+}
+
+section .hero-text p.hero-paragraph
+{
+    font-size: 18px;
+}
+
+.loan .nav-pills
+{
+    font-size:14px;
+}
+
+}
+/* xl - Extra large devices end */

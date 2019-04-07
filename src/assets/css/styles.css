@@ -1,0 +1,672 @@
+/* Pepe Ya - Color sheet:
+Orange: #ff6400
+Red:    #dc0307
+Blue:   #1182a6
+Yellow: #fad647
+Green:  #17b33c
+Gray:   #cdcdcd
+---------------------- */
+
+/* General styles start */
+
+body
+{
+    margin-top: 66px;
+}
+
+.btn,
+.card,
+a.nav-link.nav-login,
+a.nav-link.nav-register,
+input.form-control,
+input.form-control-lg,
+textarea.form-control-lg,
+.input-group > .input-group-prepend > .input-group-text,
+.input-group > .input-group-append > .input-group-text,
+.custom-file-label
+{
+    border: 2px solid #cdcdcd;
+    border-radius: 8px;
+}
+
+.card.card-big,
+.form-success
+{
+    border: 3px solid #1182a6;
+    border-radius:20px;
+}
+
+.card
+{
+    margin-bottom: 10px;
+}
+
+section
+{
+    margin-bottom: 15px;
+}
+
+section.highlight,
+section.lowlight
+{
+    margin-top: 15px;
+    padding: 30px;
+}
+
+h1,
+.hero-text p.em,
+section.why h3,
+a,
+.footer-copyright
+{
+    color: #ff6400;
+}
+
+h2,
+h3,
+.feature-icon,
+p.hero-subtitle
+{
+    color:#1182a6;
+}
+
+h1 span.highlight
+{
+    color:#dc0307;
+}
+
+header .navbar,
+section.highlight,
+.nav-pills .nav-link.active
+{
+    background-color: #ff6400;
+}
+
+.navbar-dark .navbar-nav .nav-link,
+section.highlight a,
+span.step-number
+{
+    color: #fad647
+}
+
+.navbar-dark .navbar-nav .nav-link:hover,
+.navbar-dark .navbar-nav .nav-link.nav-login,
+.btn-primary,
+section.highlight,
+section.highlight h2
+{
+    color: #fff
+
+}
+
+.highlight .card.card-alt
+{
+    background-color: transparent;
+    border: 1px solid #fff;
+}
+
+section.lowlight
+{
+    background-color: #cdcdcd;
+}
+
+.card ul
+{
+    margin-left: -21px !important;
+    color: #cdcdcd;
+    margin-bottom: 0px;
+}
+
+.card ul li span
+{
+    color: #000;
+}
+
+/* General styles end */
+
+/* Button styles start */
+
+.btn
+{
+    box-shadow: 0px 2px 2px rgba(0,0,0,0.4);
+}
+
+.btn-lg
+{
+    margin-bottom: 20px;
+    border-radius: 15px;
+}
+
+.btn-primary,
+.btn-primary:hover
+{
+    color: #fad647;
+    text-shadow: 0px 2px 0px rgba(0,0,0,0.4);
+    background-color: #ff6400;
+    border-color: #cdcdcd;
+}
+
+.btn-primary:hover
+{
+    color: #fff;
+    border-color: #fad647;
+    background-color: #dc0307
+}
+
+.btn-primary.disabled,
+.btn-primary:disabled
+{
+    background-color: #cdcdcd;
+    text-shadow: none;
+    border-color: #cdcdcd;
+}
+
+.btn-secondary,
+.btn-secondary:hover
+{
+    color: #1182a6 !important;
+    background-color: #fad647;
+    text-shadow: none;
+    border-color: #cdcdcd;
+}
+
+.btn-secondary:hover
+{
+    color: #17b33c !important;
+    background-color: #fff;
+    border-color: #fff;
+}
+
+.btn-light
+{
+    background-color:#ededed
+}
+
+/* Button styles end */
+
+/* Header & Footer styles start */
+
+.navbar
+{
+    box-shadow: 0px 2px 5px rgba(0,0,0,0.4);
+}
+
+nav a.navbar-brand,
+nav a.footer-brand
+{
+    display: block;
+    text-indent: -999999px;
+    width: 167px;
+    height: 30px;
+    background-image: url(../img/logo-header.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+nav a.footer-brand
+{
+    width: 184px;
+    height: 30px;
+    background-image: url(../img/logo-footer.png);
+}
+
+footer a,
+footer a:hover
+{
+    color: #ff6400;
+}
+
+a.nav-link
+{
+    padding: 7px 12px !important;
+    margin-bottom: 10px;
+}
+
+a.nav-link.nav-login
+{
+    margin-left: 0px;
+}
+
+a.nav-link.nav-contact
+{
+    padding-right: 0px !important;
+}
+
+a.nav-link.nav-login,
+a.nav-link.nav-register
+{
+    border-color: #fff;
+    border-radius: 15px;
+}
+
+a.nav-link.nav-login:hover,
+a.nav-link.nav-register:hover
+{
+    border-color: #fad647;
+    color: #fad647 !important;
+}
+
+a.nav-link.nav-register
+{
+    color: #ff6400 !important;
+    background-color: #fff;
+}
+
+a.nav-link.nav-register:hover
+{
+    color: #ff6400 !important;
+    background-color: #fad647;
+}
+
+.navbar-collapse
+{
+    margin-top: 20px;
+}
+
+.navbar-dark .navbar-toggler
+{
+    background-color: #fff;
+    outline-color: #fad647 !important;
+    color: #ff6400;
+}
+
+.navbar-dark .navbar-toggler:hover,
+.navbar-dark .navbar-toggler:active
+{
+    background-color: #fad647;
+    border-color: #fad647 !important;
+    outline-color: #fad647 !important;
+}
+
+/* The following horrendous solution fixes the navbar over titles when navigating with anchors.
+It's a semantically correct, CSS-only solution. Source: https://css-tricks.com/hash-tag-links-padding/
+It needs to be added in every breakpoint that changes navbar height. */
+section#faq:before,
+section#contact:before
+{ 
+    display: block; 
+    content: " "; 
+    margin-top: -46px; 
+    height: 46px; 
+    visibility: hidden; 
+    pointer-events: none;
+}
+/* End of horrendous solution */
+
+/* Header & Footer styles end */
+
+/* Form styles start */
+
+.input-group > .input-group-append > .input-group-text
+{
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+.input-group > .input-group-prepend > .input-group-text
+{
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+textarea.form-control,
+input.form-control,
+input.form-control-lg,
+.custom-file-label
+{
+    border-color: #1182a6
+}
+
+.custom-file-label::after
+{
+    content: "Examinar...";
+    border-radius: 0px 8px 8px 0px;
+    border-left: 2px solid #1182a6;
+    height: auto;
+}
+
+.form-success
+{
+    text-align: center;
+    padding: 70px;
+    padding-bottom: 70px;
+    margin-bottom: 40px;
+}
+
+.form-success i.fa-thumbs-up
+{
+    color: #17b33c;
+    font-size: 80px;
+    margin-bottom:20px;
+}
+
+/* Form styles end */  
+
+/* Home - Hero styles start */
+
+.pepe-sm
+{
+    margin-bottom: 20px;
+}
+
+.pepe-lg
+{
+    display: none;
+}
+
+/* Home - Hero styles end */
+
+/* Home - Simulator styles start */
+
+.simulator ul
+{
+    margin-left: 0px !important;
+}
+
+.simulator ul li
+{
+    width:33.3333333%;
+}
+
+.simulator-amount
+{
+    display: block;
+    color: #17b33c;
+}
+
+input[type=range].simulator-range
+{
+    -webkit-appearance: none;
+    width: 100%;
+    margin: 6.35px 0;
+}
+
+input[type=range].simulator-range:focus
+{
+    outline: none;
+}
+
+input[type=range].simulator-range::-webkit-slider-runnable-track
+{
+    width: 100%;
+    height: 13.3px;
+    cursor: pointer;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0), 0px 0px 1px rgba(13, 13, 13, 0);
+    background: rgba(17, 130, 166, 0.78);
+    border-radius: 25px;
+    border: 0px solid rgba(0, 0, 0, 0);
+}
+
+input[type=range].simulator-range::-webkit-slider-thumb
+{
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.4), 0px 0px 1px rgba(13, 13, 13, 0.4);
+    border: 2px solid #ffde49;
+    height: 26px;
+    width: 26px;
+    border-radius: 13px;
+    background: #ff6400;
+    cursor: pointer;
+    -webkit-appearance: none;
+    margin-top: -6.35px;
+}
+
+input[type=range].simulator-range:focus::-webkit-slider-runnable-track
+{
+    background: rgba(19, 148, 189, 0.78);
+}
+
+input[type=range].simulator-range::-moz-range-track
+{
+    width: 100%;
+    height: 13.3px;
+    cursor: pointer;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0), 0px 0px 1px rgba(13, 13, 13, 0);
+    background: rgba(17, 130, 166, 0.78);
+    border-radius: 25px;
+    border: 0px solid rgba(0, 0, 0, 0);
+}
+
+input[type=range].simulator-range::-moz-range-thumb
+{
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.4), 0px 0px 1px rgba(13, 13, 13, 0.4);
+    border: 2px solid #ffde49;
+    height: 26px;
+    width: 26px;
+    border-radius: 13px;
+    background: #ff6400;
+    cursor: pointer;
+}
+
+input[type=range].simulator-range::-ms-track
+{
+    width: 100%;
+    height: 13.3px;
+    cursor: pointer;
+    background: transparent;
+    border-color: transparent;
+    color: transparent;
+}
+
+input[type=range].simulator-range::-ms-fill-lower
+{
+    background: rgba(15, 112, 143, 0.78);
+    border: 0px solid rgba(0, 0, 0, 0);
+    border-radius: 50px;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0), 0px 0px 1px rgba(13, 13, 13, 0);
+}
+
+input[type=range].simulator-range::-ms-fill-upper
+{
+    background: rgba(17, 130, 166, 0.78);
+    border: 0px solid rgba(0, 0, 0, 0);
+    border-radius: 50px;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0), 0px 0px 1px rgba(13, 13, 13, 0);
+}
+
+input[type=range].simulator-range::-ms-thumb
+{
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.4), 0px 0px 1px rgba(13, 13, 13, 0.4);
+    border: 2px solid #ffde49;
+    height: 26px;
+    width: 26px;
+    border-radius: 13px;
+    background: #ff6400;
+    cursor: pointer;
+    height: 13.3px;
+}
+
+input[type=range].simulator-range:focus::-ms-fill-lower
+{
+    background: rgba(17, 130, 166, 0.78);
+}
+
+input[type=range].simulator-range:focus::-ms-fill-upper
+{
+    background: rgba(19, 148, 189, 0.78);
+}
+
+/* Home - Simulator styles end */
+
+/* Home - Why? styles start */
+
+section.why .feature-icon
+{
+    font-size: 40px;
+    float: left;
+    margin-right: 10px;
+}
+
+section.why .pepe-why
+{
+    width: 100%;
+    height: 396px;
+    background-image: url(../img/pepe-alt-01.jpg);
+    background-size: 100%;
+    position: absolute;
+}
+
+/* Home - Why? styles end */
+
+/* Home - 4 steps styles start */
+
+.highlight.four-steps .card.card-alt .card-body
+{
+    padding:0.5rem;
+}
+
+/* Home - 4 steps styles end */
+
+/* Home - FAQ styles start */
+
+p.faq-paragraph
+{
+    margin-bottom: 0px;
+}
+
+section#faq .card-body button
+{
+    text-align: left;
+    background: none;
+    border: none;
+    padding: 0px;
+}
+
+section#faq .card-body button:hover
+{
+    cursor: pointer;
+    color: #ff6400;
+}
+
+section#faq .card-body button:focus
+{
+    outline:none;
+}
+
+section#faq .card-body > p
+{
+    margin-bottom: 0px;
+}
+
+section#faq .img-pepe-faq
+{
+    width: 100%;
+    height: 220px;
+}
+
+section#faq .img-pepe-faq div
+{
+    width: 185px;
+    height: 240px;
+    margin: auto;
+    background-image: url(../img/pepe-alt-02.jpg);
+    background-size: 100%;
+    background-position: top center;
+}
+
+/* Home - FAQ styles end */
+
+/* Home - Contact styles start */
+
+.contact-icon-mail,
+.contact-icon-facebook,
+.contact-icon-instagram
+{
+    display: block;
+    width: 210px;
+    padding-top: 115px;
+    height: 20px;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: #000;
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: 50%
+}
+
+.contact-icon-mail
+{
+background-image: url(../img/home-icon-email.png);
+}
+
+.contact-icon-facebook
+{
+background-image: url(../img/home-icon-fb.png);
+}
+
+.contact-icon-instagram
+{
+background-image: url(../img/home-icon-im.png);
+}
+
+.contact-icon-mail:hover,
+.contact-icon-facebook:hover,
+.contact-icon-instagram:hover
+{
+    color: #000;
+}
+
+/* Home - Contact styles end */
+
+/* Loan styles start */
+
+.loan .pepe-sm
+{
+    display: none;
+}
+
+.loan .progress
+{
+    background-color:#cdcdcd;
+    height: 22px;
+    margin-top:15px;
+}
+
+.loan .progress-ticket .progress-outer
+{
+    margin-top: 60px !important;
+}
+
+.loan .progress-bar
+{
+    background-color:#1182a6;
+}
+
+.loan-file-input
+{
+    opacity:0;
+    width:100%;
+}
+
+.loan-file-input-label
+{
+    position:absolute;
+    top:0px;
+    left:0px;
+    white-space: normal;
+}
+
+.loan-file-input-spinner
+{
+    text-align: center;
+    background-color: #fff;
+    font-size: 30px;
+    position: absolute;
+    top: 0px;
+    left: -1px;
+    width: 102%;
+    color: #ff6400;
+}
+
+.loan-file-input-spinner,
+.loan-file-input-spinner.invisible
+{
+    display:none;
+}
+
+.loan-file-input-spinner.visible
+{
+    display:block;
+}
+
+/* Loan styles end */

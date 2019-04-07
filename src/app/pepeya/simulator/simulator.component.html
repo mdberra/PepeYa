@@ -1,0 +1,236 @@
+<section class="container">
+    <div class="row">
+        <div class="col-lg-5 pepe-lg"><div class="pepe-img"><div></div></div></div>
+        <div class="col-lg-7 ">
+            <div class="hero-text">
+                <img class="img-fluid pepe-sm" src="assets/img/pepe-sm.jpg" alt="Pepe Ya" />
+                <h1>Pepe te da tu <span class="highlight">mini préstamo on-line </span><span class="lowlight">sin vueltas en 24 hs!</span></h1>
+                <p class="hero-subtitle">12 años de experiencia lo avalan.</p>
+                <p class="hero-paragraph">Los mini préstamos están pensados para <b>empleados públicos provinciales, municipales y jubilados</b> de todo el país.</p>
+                <p class="em">Pepe <u>no</u> tiene en cuenta el Veraz!</p>
+            </div>
+            <div class="card card-big simulator">
+                <div class="card-body">
+                    <h3>Calculá tu mini préstamo</h3>
+                    <form>
+                        <div class="form-group">
+                            <label for="simulator_form_amount"><b>¿Cuánta plata querés?</b></label>
+                            <ng5-slider [(value)]="valueSlider" [options]="optionsSlider"></ng5-slider>
+                            <div>
+                                <p class="text-center mt-3 mb-0"><b>Cuota promedio:</b> <span class="simulator-amount">$518,20</span> A pagar en 12 meses</p>
+                            </div>
+                        </div>
+                        <div class="text-center">
+                            <button type="submit" class="btn btn-primary btn-lg" (click)="onPedi()">Pedí tu préstamo ahora <i class="fas fa-caret-right"></i></button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+ <!--            <div class="card card-big simulator">
+                <div class="card-body">
+                    <h3>Calculá tu mini préstamo</h3>
+                    <form>
+                        <div class="form-group">
+                            <label for="simulator_form_amount"><b>¿Cuánta plata querés?</b></label>
+                            <input class="form-control-range simulator-range" id="simulator_form_amount" type="number" min="1000" max="5000" step="500" value="3000" oninput="simulator_form_amount_disp.value = simulator_form_amount.value" type="range">
+                            <ul class="clearfix list-unstyled mb-3">
+                                <li class="float-left"><span class="sr-only">Monto mínimo: </span><span>$1.000</span></li>
+                                <li class="float-left text-center loan-amount"><b><span class="sr-only">Estás pidiendo: </span><span>$<output id="simulator_form_amount_disp">3000</output></span></b></li>
+                                <li class="float-left text-right"><span class="sr-only">Monto máximo: </span><span>$5.000</span></li>
+                            </ul>
+                            <div>
+                                <p class="text-center mt-3 mb-0"><b>Cuota promedio:</b> <span class="simulator-amount">$518,20</span> A pagar en 12 meses</p>
+                            </div>
+                        </div>
+                        <div class="text-center">
+                            <button type="submit" class="btn btn-primary btn-lg" (click)="onPedi()">Pedí tu préstamo ahora <i class="fas fa-caret-right"></i></button>
+                        </div>
+                    </form>
+                </div>
+            </div> -->
+        </div>
+    </div>
+</section>
+<section class="container why">
+    <div class="row">
+        <div class="col-12 text-center">
+            <h2>¿Por qué pedirle un mini préstamo a Pepe?</h2>
+        </div>
+        <div class="col-md-4 col-xl-3">
+            <div class="card">
+                <div class="card-body">
+                    <i class="far fa-clock feature-icon"></i>
+                    <h3 class="why-title"><span>Porque </span><span>es rápido</span></h3>
+                    <ul>
+                        <li><span>La plata se transfiere en tu cuenta enseguida.</span></li>
+                        <li><span>La atención es rápida y personalizada.</span></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 col-xl-3">
+            <div class="card">
+                <div class="card-body">
+                    <i class="far fa-check-square feature-icon"></i>
+                    <h3 class="why-title"><span>Porque </span><span>es fácil</span></h3>
+                    <ul>
+                        <li><span>Podés pedir tu préstamo por internet o por teléfono.</span></li>
+                        <li><span>Las cuotas son todas iguales.</span></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 col-xl-3">
+            <div class="card">
+                <div class="card-body">
+                    <i class="fas fa-hand-holding-usd feature-icon"></i>
+                    <h3 class="why-title"><span>Porque </span><span>es conveniente</span></h3>
+                    <ul>
+                        <li><span>No tenés gastos de apertura ni gastos de mantenimiento.</span></li>
+                        <li><span>Podés renovar el préstamo en cualquier momento.</span></li>
+                        <li><span>Sin sorpresas: pagás lo mismo cada mes.</span></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 col-xl-3 visible-xl">
+            <div class="pepe-why"></div>
+        </div>
+    </div>
+    <div class="text-center">
+        <button type="submit" class="btn btn-primary btn-lg" (click)="onPedi()">Pedí tu préstamo ahora <i class="fas fa-caret-right"></i></button>
+    </div>
+  </section>
+  <section class="highlight four-steps text-center">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <h2>¡En sólo 4 pasos podés tener tu plata!</h2>
+                <p class="subtitle">Fijate cómo:</p>
+            </div>
+            <div class="col-sm-6 col-md-3">
+                <div class="card card-alt">
+                    <div class="card-body">
+                        <p class="step-1"><span class="step-number"><span class="sr-only">Paso </span>1<span class="sr-only">: </span></span>Decile a Pepe cuánta plata querés.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-3">
+                <div class="card card-alt">
+                    <div class="card-body">
+                        <p class="step-2"><span class="step-number"><span class="sr-only">Paso </span>2<span class="sr-only">: </span></span>Completá el formulario.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-3">
+                <div class="card card-alt">
+                    <div class="card-body">
+                        <p class="step-3"><span class="step-number"><span class="sr-only">Paso </span>3<span class="sr-only">: </span></span>Esperá el llamado con la aprobación.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-3">
+                <div class="card card-alt">
+                    <div class="card-body">
+                        <p class="step-4"><span class="step-number"><span class="sr-only">Paso </span>4<span class="sr-only">: </span></span>¡Pepe te deposita el dinero en tu cuenta en 24 hs!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+  </section>
+  <section class="container" id="faq">
+    <div class="row">
+        <div class="col-12 text-center mt-3">
+            <h2>Preguntas frecuentes</h2>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-4 order-lg-2">
+            <div class="img-pepe-faq"><div></div></div>
+            <div class="card">
+                <div class="card-body">
+                    <p><b>¿Cuáles son los requisitos?</b></p>
+                    <ul>
+                        <li><span>Documento Nacional de Identidad.</span></li>
+                        <li><span>Últimos tres recibos de sueldo.</span></li>
+                        <li><span>CBU.</span></li>
+                        <li><span>Ticket con los dos últimos meses de movimientos del cajero automático.</span></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-8 order-lg-1" id="faq-block">
+            <div class="card">
+                <div class="card-body">
+                    <p id="faq-1"><button class="collapsed" type="button" data-toggle="collapse" data-target="#faq-collapse-1" aria-expanded="false" aria-controls="faq-collapse-one"><b>¿Cuánta plata puedo solicitar?</b> <i class="fas fa-caret-down"></i></button></p>
+                    <div id="faq-collapse-1" class="collapse hide" aria-labelledby="faq-1" data-parent="#faq-block">
+                        <p class="faq-paragraph">Podés pedir de $1.000 hasta $5.000 de préstamo de efectivo y devolverlo hasta en 12 cuotas. Si pagas de acuerdo al trato que hiciste con Pepe, siempre vas a poder contar con él. Si nunca aplicaste, cuando termines de completar el primer formulario, se te va a informar el máximo que se te puede prestar. Mientras más Pepe te conoce, más dinero te puede brindar y menos te va a cobrar.  Si ya aplicaste alguna vez, vas a ver las condiciones específicas para vos.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-body">
+                    <p id="faq-2"><button class="collapsed" type="button" data-toggle="collapse" data-target="#faq-collapse-2" aria-expanded="false" aria-controls="faq-collapse-one"><b>¿Dónde y cómo realizo el pago de lo que debo?</b> <i class="fas fa-caret-down"></i></button></p>
+                    <div id="faq-collapse-2" class="collapse hide" aria-labelledby="faq-2" data-parent="#faq-block">
+                        <p class="faq-paragraph">El día del vencimiento, Pepe te va a debitar el dinero de la misma cuenta bancaria donde te acreditó los fondos del préstamo. El monto a debitar será: el monto acreditado + el servicio + la tasa de interés + IVA. Lo único que vos tenes que hacer, es asegurarte de que haya saldo suficiente en esa cuenta bancaria. Simple, sin colas, sin pérdida de tiempo ni trámites engorrosos.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-body">
+                    <p id="faq-3"><button class="collapsed" type="button" data-toggle="collapse" data-target="#faq-collapse-3" aria-expanded="false" aria-controls="faq-collapse-one"><b>¿Puedo pagar de otra forma que no sea débito directo?</b> <i class="fas fa-caret-down"></i></button></p>
+                    <div id="faq-collapse-3" class="collapse hide" aria-labelledby="faq-3" data-parent="#faq-block">
+                        <p class="faq-paragraph">Dejando los fondos en tu cuenta e informándole a Pepe que ya dispones de los fondos, él puede realizar el débito de tu cuenta, sin que debas realizar ningún tramite más.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-body">
+                    <p id="faq-4"><button class="collapsed" type="button" data-toggle="collapse" data-target="#faq-collapse-4" aria-expanded="false" aria-controls="faq-collapse-one"><b>¿Cómo pido el préstamo?</b> <i class="fas fa-caret-down"></i></button></p>
+                    <div id="faq-collapse-4" class="collapse hide" aria-labelledby="faq-4" data-parent="#faq-block">
+                        <p class="faq-paragraph">Para obtener tu préstamo de efectivo sólo tenés que:</p>
+                        <ul>
+                            <li><span>Registrarte completando todos los campos que Pepe necesita para conocerte.</span></li>
+                            <li><span>Una vez que terminaste este registro, Pepe te responderá si tu préstamo fue aprobado y por qué monto.</span></li>
+                            <li><span>Sólo que se te acredite en tu banco el monto aprobado. Si lo hiciste antes de las 18 hs lo recibís ese mismo día, sino al día hábil siguiente.</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-body">
+                    <p id="faq-5"><button class="collapsed" type="button" data-toggle="collapse" data-target="#faq-collapse-5" aria-expanded="false" aria-controls="faq-collapse-one"><b>¿Cómo recibo la plata?</b> <i class="fas fa-caret-down"></i></button></p>
+                    <div id="faq-collapse-5" class="collapse hide" aria-labelledby="faq-5" data-parent="#faq-block">
+                        <p class="faq-paragraph">Pepe te depositará el monto aprobado en el CBU que le indicaste en el momento de la aplicación.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-body">
+                    <p id="faq-6"><button class="collapsed" type="button" data-toggle="collapse" data-target="#faq-collapse-6" aria-expanded="false" aria-controls="faq-collapse-one"><b>¿Tengo que tener presente algo más?</b> <i class="fas fa-caret-down"></i></button></p>
+                    <div id="faq-collapse-6" class="collapse hide" aria-labelledby="faq-6" data-parent="#faq-block">
+                        <p class="faq-paragraph">Pepe te recomienda tener siempre presentes estos tips:</p>
+                        <ul>
+                            <li><span>No tenés que abonar ningún anticipo. Esto quiere decir que antes de solicitar el adelanto no tenés que pagar NADA. Sólo debes abonar en la fecha de vencimiento de tu pedido.</span></li>
+                            <li><span>Para la devolución recordá que Pepe siempre hace el débito en la fecha de vencimiento de tu préstamo.</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+</section>
+<section class="highlight text-center cta">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <h2><span>¿Viste qué fácil? ¡Dale, pedí tu </span><span>mini préstamo de hasta $5.000!</span></h2>
+                <p class="subtitle">¡Tené tu plata disponible en 24 hs!</p>
+                <div class="text-center">
+                    <button type="submit" class="btn btn-secondary btn-lg" (click)="onPedi()">Pedí tu préstamo ahora <i class="fas fa-caret-right"></i></button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

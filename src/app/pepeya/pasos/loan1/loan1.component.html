@@ -1,0 +1,91 @@
+<app-header></app-header>
+
+<div class="container container-loan">
+
+    <section class="container loan">
+        <header class="row">
+            <div class="col-md-3">
+                <img class="img-fluid pepe-sm" src="assets/img/pepe-sm.jpg" alt="Pepe Ya" />
+            </div>
+            <div class="col-md-9">
+                <h1>Pedile tu préstamo a Pepe</h1>
+                <ul class="nav nav-pills">
+                    <li class="nav-item">
+                        <span class="nav-link active">1. Completá tus datos</span>
+                    </li>
+                    <li class="nav-item">
+                        <span class="nav-link">2. Adjuntá la documentación</span>
+                    </li>
+                    <li class="nav-item">
+                        <span class="nav-link">3. Esperá el llamado de Pepe</span>
+                    </li>
+                </ul>
+        </div>
+        </header>
+    </section>
+
+    <!-- STEP 1 starts -->
+    <section class="container loan">
+        <form class="row" #contactoForm="ngForm">
+
+            <div class="col-md-6 form-group">
+                <label for="form-contact-name"><b>Nombre</b></label>
+                <input type="text" class="form-control form-control-lg" id="form-contact-name" maxlength="20" placeholder="Nombre" required
+                        [(ngModel)]="contacto.nombre" name="nombre" #name="ngModel"/>
+            </div>
+            <div class="col-md-6 form-group">
+                <label for="form-contact-surname"><b>Apellido</b></label>
+                <input type="text" class="form-control form-control-lg" id="form-contact-apellido" maxlength="20" placeholder="Apellido" required
+                [(ngModel)]="contacto.apellido" name="apellido" #name="ngModel"/>
+
+            </div>
+            <div class="col-md-12 form-group">
+                <label for="form-contact-email"><b>Dirección de correo electrónico</b></label>
+                <input type="email" class="form-control form-control-lg" id="form-contact-email" placeholder="Ingresá tu correo electrónico"
+                       [(ngModel)]="contacto.email" name="email" #name="ngModel">
+            </div>
+            <div class="col-md-6 form-group">
+                <label for="form-contact-phone"><b>Teléfono o celular</b></label>
+                <input type="text" class="form-control form-control-lg" id="form-contact-phone" placeholder="Tu número de teléfono o número de celular" required
+                    [(ngModel)]="contacto.telefono" name="telefono" #name="ngModel">
+            </div>
+            <div class="col-md-6 form-group">
+                <label for="form-contact-document-number"><b>DNI</b></label>
+                <input type="text" class="form-control form-control-lg" id="form -contact-document-number" maxlength="8" placeholder="Tu número de documento" required
+                    [(ngModel)]="contacto.dniStr" name="dniStr" #name="ngModel">
+            </div>
+            <div class="col-md-6 form-group">
+                <label for="form-contact-amount"><b>Monto</b></label>
+                <div class="input-group">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text" id="form-contact-amount-prepend">$</span>
+                    </div>
+                    <input type="number" class="form-control form-control-lg" id="form-contact-amount" placeholder="1000 a 5000" maxlength="5" min="1000" max="5000" required
+                        [(ngModel)]="contacto.monto" name="monto" #name="ngModel">
+                </div>
+            </div>
+            <div class="col-md-6 form-group">
+                <label for="form-contact-timeframe"><b>Plazo</b></label>
+                <div class="input-group">
+                    <input type="number" class="form-control form-control-lg" id="form-contact-timeframe" maxlength="2" value="12" min="6" required readonly
+                        [(ngModel)]="contacto.plazo" name="plazo" #name="ngModel">
+                    <div class="input-group-append">
+                        <span class="input-group-text" id="form-contact-amount-append">meses</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-12 form-group">
+                <label for="form-contact-message"><b>Mensaje</b></label>
+                <textarea type="text" class="form-control form-control-lg contact-message" id="form-contact-message" placeholder="Ingresá tu mensaje o comentarios"
+                    [(ngModel)]="contacto.mensaje" name="mensaje" #name="ngModel"></textarea>
+            </div>
+            <div class="col-md-12 text-right">
+                <button (click)="onPaso2()" type="submit" class="btn btn-primary btn-lg" [disabled]="!contactoForm.form.valid">Continuar <i class="fas fa-caret-right"></i></button>
+            </div>
+
+        </form>
+    </section>
+
+</div>
+
+<app-footer></app-footer>

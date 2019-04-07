@@ -1,0 +1,75 @@
+<app-header></app-header>
+
+<div class="container container-loan">
+
+    <section class="container loan">
+        <header class="row">
+            <div class="col-md-3">
+                <img class="img-fluid pepe-sm" src="assets/img/pepe-sm.jpg" alt="Pepe Ya" />
+            </div>
+            <div class="col-md-9">
+                <h1>Pedile tu préstamo a Pepe</h1>
+                <ul class="nav nav-pills">
+                    <li class="nav-item">
+                        <span class="nav-link">1. Completá tus datos</span>
+                    </li>
+                    <li class="nav-item">
+                        <span class="nav-link active">2. Adjuntá la documentación</span>
+                    </li>
+                    <li class="nav-item">
+                        <span class="nav-link">3. Esperá el llamado de Pepe</span>
+                    </li>
+                </ul>
+            </div>
+        </header>
+    </section>
+
+    <section class="container loan">
+        <form class="row">
+            <div>
+                <ngx-spinner bdColor="rgba(51,51,51,0.8)" size="default" color="#fff" type="ball-atom"></ngx-spinner>
+            </div>
+            <div class="col-lg-6 form-group">
+                <div class="custom-file">
+                    <input type="file" class="loan-file-input" id="form-file1" (change)="onDniSelected($event)" accept="image/*">
+                    <label class="loan-file-input-label btn btn-light btn-block" for="form-file1">Subí la foto de tu DNI...</label>
+                </div>
+                <progress-bar [progress]="avanceDni" [color]="'#488aff'"></progress-bar>
+            </div>
+            <div class="col-lg-6 form-group">
+                <div class="custom-file">
+                    <input type="file" class="loan-file-input" id="form-file2" (change)="onSueldo1Selected($event)" accept="image/*">
+                    <label class="loan-file-input-label btn btn-light btn-block" for="form-file2">Subí la foto del recibo de sueldo 1...</label>
+                </div>
+                <progress-bar  [progress]="avanceSueldo1" [color]="'#488aff'"></progress-bar>
+            </div>
+            <div class="col-lg-6 form-group">
+                <div class="custom-file">
+                    <input type="file" class="loan-file-input" id="form-file3" (change)="onSueldo2Selected($event)" accept="image/*">
+                    <label class="loan-file-input-label btn btn-light btn-block" for="form-file3">Subí la foto del recibo de sueldo 2...</label>
+                </div>
+                <progress-bar [progress]="avanceSueldo2" [color]="'#488aff'"></progress-bar>
+            </div>
+            <div class="col-lg-6 form-group">
+                <div class="custom-file">
+                    <input type="file" class="loan-file-input" id="form-file4" (change)="onCbuSelected($event)" accept="image/*">
+                    <label class="loan-file-input-label btn btn-light btn-block" for="form-file4">Subí la foto del CBU...</label>
+                </div>
+                <progress-bar [progress]="avanceCbu" [color]="'#488aff'"></progress-bar>
+            </div>
+            <div class="col-lg-12 form-group">
+                <div class="custom-file">
+                    <input type="file" class="loan-file-input" id="form-file5" (change)="onTicketSelected($event)" accept="image/*">
+                    <label class="loan-file-input-label btn btn-light btn-block" for="form-file5">Subí la foto del ticket con los dos últimos meses de movimientos del cajero automático...</label>
+                </div>
+                <progress-bar class="progress-ticket" [progress]="avanceTicket" [color]="'#488aff'"></progress-bar>
+            </div>
+            <div class="col-md-12 text-right">
+                <button type="submit" class="btn btn-primary btn-lg" (click)="onPaso3()">Finalizar <i class="fas fa-caret-right"></i></button>
+            </div>
+        </form>
+    </section>
+
+</div>
+
+<app-footer></app-footer>

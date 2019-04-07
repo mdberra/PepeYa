@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css?family=Baloo|Montserrat:400,400i,700,700i');
+body
+{
+    font-family: 'Montserrat', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.btn,
+.navbar-nav a,
+p.hero-subtitle,
+.simulator-amount,
+span.step-number,
+p.em,
+footer
+{
+    font-family: 'Baloo', cursive;
+}
+
+section.why h3.why-title span,
+span.step-number
+{
+    display: block;
+}
+
+.simulator-amount,
+span.step-number
+{
+    font-size: 48px;
+}
+
+.simulator-amount
+{
+    line-height: 48px;
+}
+
+h2
+{
+    font-size: 40px;
+}
+
+h1 span.lowlight
+{
+    font-size: 36px;
+    line-height: 36px;
+}
+
+.btn-lg
+{
+    font-size: 20px;
+}
+
+p.hero-subtitle
+{
+    font-size: 28px;
+}
+
+p.subtitle,
+.hero-text p.em
+{
+    font-size: 24px;
+}
+
+section.why h3,
+section.disclaimer h2,
+.loan-amount
+{
+    font-size: 16px;
+}
+
+.card-body ul,
+#faq .card-body p.faq-paragraph
+{
+    font-size: 14px !important;
+}
+
+section.disclaimer p
+{
+    font-size: 12px;
+    text-align: justify;
+}
+
+.hero-text
+{
+    text-align: center;
+}
