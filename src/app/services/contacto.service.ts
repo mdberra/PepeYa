@@ -18,7 +18,7 @@ export class ContactoService {
     
     private urlContacto: string = this.url + "/api/pepeya/contacto";
     private urlImage: string = this.url + "/api/pepeya/image";
-
+    private idImagen:string;
     private contacto: Contacto;
     public avance$Dni = new Subject<number>();
     public avance$Sueldo1 = new Subject<number>();
@@ -34,8 +34,9 @@ export class ContactoService {
     public getContacto() : Contacto {
       return this.contacto;
     }
-    public getIdImagen() : number {
-      return this.contacto.idImagen;
+    public getIdImagen() : String {
+      this.idImagen = String(this.contacto.idImagen) + "-" + String(this.contacto.dni);
+      return this.idImagen;
     }
     public postContacto(_contacto: Contacto): Observable<Contacto> {
       this.contacto = _contacto;
